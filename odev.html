@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Restorant</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Emin Usta Donercisi</h2>
+        <div id="musteriSayisi">
+          <p id="parMusterisayisi">Mevcut Musteri sayisi:</p>
+        </div>
+      </div>
+      <div class="jumbotron">
+        Gelen Musteri
+        <label for="inputkisi"></label>
+        <input type="number" id="inputGelen" />
+        <button class="btn btn-outline-primary" onclick="Oturt()" id="btnOturt">
+          Musterileri oturt
+        </button>
+      </div>
+      <div class="jumbotron">
+        Giden Musteri
+        <label for="inputkisi2"></label>
+        <input type="number" id="inputGiden" />
+        <button class="btn btn-primary" onclick="Kaldir()" id="btnGonder">
+          Musterileri gonder
+        </button>
+      </div>
+      <div class="jumbotron">
+        <label id="inputBekleyen">Bekleyen Musteri</label>
+        <input type="number" for="inputkisi2" />
+        <button class="btn btn-primary" id="btnBeklet">
+          Masaya oturt
+        </button>
+        <p></p>
+        <!-- O an bekleyen grup/insan sayisi-->
+      </div>
+      <div class="container"></div>
+
+      <!-- 
+          Restoran Ozellikleri
+          Max Kisi sayisi:90;
+          Her kaldirdigim musteri icin 100 TL para kazaniyor olalaim.
+          Math.floor(Math.random()*11)1-10 arasinda bir sayi dondurur setInterval(function,5000) burada belirtilen fonksiyon her 5 saniyede bir calisir.
+          Bir masa max insan sayisi = 5
+          20 kisi => 1000TL
+          30 kisi => 2000TL
+
+
+
+      -->
+    </div>
+
+    <!-- SCRIPTLER-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script>
+      // var baslik = document.querySelector("body");
+      // baslik.style.backgroundColor = "red";
+
+      // setInterval(function() {
+      //   if (baslik.style.backgroundColor === "red") {
+      //     baslik.style.backgroundColor = "blue";
+      //     console.log(Math.floor(Math.random() * 11));
+      //   } else {
+      //     baslik.style.backgroundColor = "red";
+      //     console.log(Math.floor(Math.random() * 11));
+      //   }
+      // }, 500);
+    </script> -->
+    <script src="odev.js"></script>
+  </body>
+</html>
